@@ -1,0 +1,428 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CA3D2A4-A117-46A6-BEC2-D66074ABF90B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomativeZoneCarAtoZ</RootNamespace>
+    <AssemblyName>AutomativeZoneCarAtoZ</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44379</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminCar.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\AdminService.aspx" />
+    <Content Include="Admin\EditAdminCar.aspx" />
+    <Content Include="Admin\EditAdminPrice.aspx" />
+    <Content Include="Admin\EditAppointment.aspx" />
+    <Content Include="Admin\Home.aspx" />
+    <Content Include="Admin\img\car-logo.png" />
+    <Content Include="Admin\style\Admin.css" />
+    <Content Include="Admin\EditAdminService.aspx" />
+    <Content Include="Admin\AdminPrice.aspx" />
+    <Content Include="Admin\AdminAppointment.aspx" />
+    <Content Include="ClientPrice.aspx" />
+    <Content Include="Client\ClientAboutUs.aspx" />
+    <Content Include="Client\ClientBlog.aspx" />
+    <Content Include="Client\ClientContactUs.aspx" />
+    <Content Include="Client\ClientMessage.aspx" />
+    <Content Include="Client\ClientPrice.aspx" />
+    <Content Include="Client\assets\css\all.min.css" />
+    <Content Include="Client\assets\css\bootstrap.min.css" />
+    <Content Include="Client\assets\css\style.css" />
+    <Content Include="Client\assets\images\badge.png" />
+    <Content Include="Client\assets\images\blog\img-article-intro-4.jpg" />
+    <Content Include="Client\assets\images\blog\post-holder-image-1-min.jpg" />
+    <Content Include="Client\assets\images\blog\Post-holder-image-5-min.jpg" />
+    <Content Include="Client\assets\images\customer-support.png" />
+    <Content Include="Client\assets\images\img-about-1.jpg" />
+    <Content Include="Client\assets\images\img-about-3.jpg" />
+    <Content Include="Client\assets\images\leader.png" />
+    <Content Include="Client\assets\images\logo.png" />
+    <Content Include="Client\assets\images\service\img-service-1.jpg" />
+    <Content Include="Client\assets\images\service\img-service-2.jpg" />
+    <Content Include="Client\assets\images\service\img-service-3.jpg" />
+    <Content Include="Client\assets\images\service\img-service-4.jpg" />
+    <Content Include="Client\assets\images\service\img-service-5.jpg" />
+    <Content Include="Client\assets\images\service\img-service-6.jpg" />
+    <Content Include="Client\assets\images\slider\s1.jpg" />
+    <Content Include="Client\assets\images\slider\s2.jpg" />
+    <Content Include="Client\assets\images\slider\s3.jpg" />
+    <Content Include="Client\assets\images\team\t1.jpg" />
+    <Content Include="Client\assets\images\team\t2.jpg" />
+    <Content Include="Client\assets\images\team\t3.jpg" />
+    <Content Include="Client\assets\images\team\t4.jpg" />
+    <Content Include="Client\assets\images\testimonial\member-01.jpg" />
+    <Content Include="Client\assets\images\testimonial\member-02.jpg" />
+    <Content Include="Client\assets\images\testimonial\member-03.jpg" />
+    <Content Include="Client\assets\images\types\car.png" />
+    <Content Include="Client\assets\images\types\hatchback.png" />
+    <Content Include="Client\assets\images\types\sedan.png" />
+    <Content Include="Client\assets\images\types\sports-car.png" />
+    <Content Include="Client\assets\images\types\suv-car.png" />
+    <Content Include="Client\assets\images\types\suv.png" />
+    <Content Include="Client\assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Client\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="Client\assets\js\script.js" />
+    <Content Include="Client\assets\js\typewrite.min.js" />
+    <Content Include="Client\assets\plugins\scroll-fixed\jquery-scrolltofixed-min.js" />
+    <Content Include="Client\assets\plugins\testimonial\css\owl.carousel.min.css" />
+    <Content Include="Client\assets\plugins\testimonial\css\owl.theme.min.css" />
+    <Content Include="Client\assets\plugins\testimonial\js\owl.carousel.min.js" />
+    <Content Include="Client\assets\webfonts\fa-brands-400.svg" />
+    <Content Include="Client\assets\webfonts\fa-regular-400.svg" />
+    <Content Include="Client\assets\webfonts\fa-solid-900.svg" />
+    <Content Include="Client\ClientAppointment.aspx" />
+    <Content Include="Client\ClientIndex.aspx" />
+    <Content Include="Client\ClientService.aspx" />
+    <Content Include="css\style-starter.css" />
+    <Content Include="images\1.png" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\fb.png" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
+    <Content Include="images\g5.jpg" />
+    <Content Include="images\g6.jpg" />
+    <Content Include="images\g7.jpg" />
+    <Content Include="images\g8.jpg" />
+    <Content Include="images\g9.jpg" />
+    <Content Include="images\ins.png" />
+    <Content Include="images\left.png" />
+    <Content Include="images\media-img.png" />
+    <Content Include="images\right.png" />
+    <Content Include="images\sprite.png" />
+    <Content Include="images\team1.jpg" />
+    <Content Include="images\team2.jpg" />
+    <Content Include="images\team3.jpg" />
+    <Content Include="images\team4.jpg" />
+    <Content Include="images\tw.png" />
+    <Content Include="js\aos.js" />
+    <Content Include="js\aosindex.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\counter.js" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\jquery.chocolat.js" />
+    <Content Include="js\jquery.countup.js" />
+    <Content Include="js\jquery.waypoints.min.js" />
+    <Content Include="js\owl.carousel.js" />
+    <Content Include="js\theme-change.js" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="ClientHome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminCar.aspx.cs">
+      <DependentUpon>AdminCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCar.aspx.designer.cs">
+      <DependentUpon>AdminCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminService.aspx.cs">
+      <DependentUpon>AdminService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminService.aspx.designer.cs">
+      <DependentUpon>AdminService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAdminCar.aspx.cs">
+      <DependentUpon>EditAdminCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdminCar.aspx.designer.cs">
+      <DependentUpon>EditAdminCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAdminPrice.aspx.cs">
+      <DependentUpon>EditAdminPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdminPrice.aspx.designer.cs">
+      <DependentUpon>EditAdminPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAppointment.aspx.cs">
+      <DependentUpon>EditAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAppointment.aspx.designer.cs">
+      <DependentUpon>EditAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAdminService.aspx.cs">
+      <DependentUpon>EditAdminService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdminService.aspx.designer.cs">
+      <DependentUpon>EditAdminService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPrice.aspx.cs">
+      <DependentUpon>AdminPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPrice.aspx.designer.cs">
+      <DependentUpon>AdminPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAppointment.aspx.cs">
+      <DependentUpon>AdminAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAppointment.aspx.designer.cs">
+      <DependentUpon>AdminAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPrice.aspx.cs">
+      <DependentUpon>ClientPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientPrice.aspx.designer.cs">
+      <DependentUpon>ClientPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSite1.Master.cs">
+      <DependentUpon>ClientSite1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite1.Master.designer.cs">
+      <DependentUpon>ClientSite1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientAboutUs.aspx.cs">
+      <DependentUpon>ClientAboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientAboutUs.aspx.designer.cs">
+      <DependentUpon>ClientAboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientBlog.aspx.cs">
+      <DependentUpon>ClientBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientBlog.aspx.designer.cs">
+      <DependentUpon>ClientBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientContactUs.aspx.cs">
+      <DependentUpon>ClientContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientContactUs.aspx.designer.cs">
+      <DependentUpon>ClientContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientMessage.aspx.cs">
+      <DependentUpon>ClientMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientMessage.aspx.designer.cs">
+      <DependentUpon>ClientMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientPrice.aspx.cs">
+      <DependentUpon>ClientPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientPrice.aspx.designer.cs">
+      <DependentUpon>ClientPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Client.Master.cs">
+      <DependentUpon>Client.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\Client.Master.designer.cs">
+      <DependentUpon>Client.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientAppointment.aspx.cs">
+      <DependentUpon>ClientAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientAppointment.aspx.designer.cs">
+      <DependentUpon>ClientAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientIndex.aspx.cs">
+      <DependentUpon>ClientIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientIndex.aspx.designer.cs">
+      <DependentUpon>ClientIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientService.aspx.cs">
+      <DependentUpon>ClientService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ClientService.aspx.designer.cs">
+      <DependentUpon>ClientService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClientHome.aspx.cs">
+      <DependentUpon>ClientHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientHome.aspx.designer.cs">
+      <DependentUpon>ClientHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminSite.Master" />
+    <Content Include="ClientSite1.Master" />
+    <Content Include="Client\Client.Master" />
+    <Content Include="Client\assets\.DS_Store" />
+    <Content Include="Client\assets\css\style.css.map" />
+    <Content Include="Client\assets\images\.DS_Store" />
+    <Content Include="Client\assets\images\slider\.DS_Store" />
+    <Content Include="Client\assets\plugins\.DS_Store" />
+    <Content Include="Client\assets\webfonts\fa-brands-400.eot" />
+    <Content Include="Client\assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="Client\assets\webfonts\fa-brands-400.woff" />
+    <Content Include="Client\assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="Client\assets\webfonts\fa-regular-400.eot" />
+    <Content Include="Client\assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="Client\assets\webfonts\fa-regular-400.woff" />
+    <Content Include="Client\assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="Client\assets\webfonts\fa-solid-900.eot" />
+    <Content Include="Client\assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="Client\assets\webfonts\fa-solid-900.woff" />
+    <Content Include="Client\assets\webfonts\fa-solid-900.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CarAtoZ\Backup\AtoZCarPresentaion\AtoZCarBusinesslayer\AtoZCarBusinesslayer.csproj">
+      <Project>{e153a513-b107-43e1-bec8-bcaf25467cd7}</Project>
+      <Name>AtoZCarBusinesslayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59641</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
